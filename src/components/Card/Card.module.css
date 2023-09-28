@@ -1,0 +1,113 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+.container,.fruit,.infoNutrition{
+    display: flex;  
+    justify-content: center;
+}
+.container{
+    flex-wrap: wrap;
+    gap: 200px;
+}
+h2{
+    text-transform: capitalize;
+}
+.fruit, .infoNutrition{
+    flex-direction: column;
+
+}
+.fruitImage{
+    max-width: 200px;
+    width: 200px;
+    height: 200px;
+    object-fit:contain;
+   
+}
+.containerGif{
+    padding: 30px;
+}
+.fruitGif{
+    max-width: 50px !important;
+    max-height: 50px !important;
+    width: 50px;
+    height: 50px;
+    
+}
+.containerButton{
+    display: flex;
+    padding:  0 10%;
+    justify-content: center;
+    align-items: center;
+    background: none;
+}
+
+.containerButton button{
+    width: 80%;
+    height: 80px;
+    border-radius: 24px;
+    font-size: 1em;
+    background: #FFF;
+    box-shadow: 8px 8px 32px 0px rgba(0, 0, 0, 0.15), 12px -12px 16px 0px rgba(0, 0, 0, 0.1) inset;
+    border: 0.1px solid #00000038
+   
+}
+
+.vitamine{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.vitamine ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 8px;
+    padding-left: 0;
+}
+.vitamine ul li{
+   border: 1px solid;
+   border-radius: 50%;
+   min-width: 20px;  
+   color: white;
+   padding: 4px;
+}
+td{
+    font-weight: 900;
+    font-size: large;
+}
+.fruit .fruitImage{
+    width: 100%;
+}
+
+th{
+    text-align: start;
+    font-weight: 500;
+}
+table{
+    line-height: 40px;
+}
+.github{
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+}
+.github .icon{
+    font-size: 32px;
+}
+
+
+@media (max-width: 600px) {
+    .containerButton{
+        padding: 0px;
+    }
+    .containerButton button{
+      content:'Aperte e troque de fruta';
+      width: 100%;
+    }
+    .container{
+        gap: 16px;
+    }
+  }

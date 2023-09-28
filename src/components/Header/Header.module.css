@@ -1,0 +1,15 @@
+header{
+    display: flex;
+}
+header .fruitsImg{
+    width: 5rem;
+}
+img.gif{
+    width: 24px !important;
+    height: 24px !important;
+}
+
+.container{
+    display: flex;
+    gap: 8px;
+}
